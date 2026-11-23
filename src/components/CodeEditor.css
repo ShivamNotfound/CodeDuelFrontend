@@ -1,0 +1,28 @@
+#code_editor{
+    border: 3px rgba(0, 0, 0, 0.742) solid;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+}
+#language_select{
+    width:100px;
+    margin-bottom:20px;
+}
+
+#right_panel_container{
+    flex:2;
+    border: 1px solid black;
+    min-height:600px;
+    padding: 20px;
+}
+
+#PD_container{
+    flex:1;
+    border: 1px solid black;
+    width:40%;
+    padding: 20px;
+}

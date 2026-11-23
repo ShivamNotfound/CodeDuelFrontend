@@ -1,0 +1,7 @@
+*{
+  box-sizing : border-box;
+}
+#problem_page_container{
+  display: flex;
+  justify-content: space-between;
+}
