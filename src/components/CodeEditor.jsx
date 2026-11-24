@@ -1,8 +1,8 @@
 import './CodeEditor.css'
 import Editor from "@monaco-editor/react"
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
-function CodeEditor()
+function CodeEditor(props)
 {
     const [language, setLanguage] = useState("python");
 
@@ -10,7 +10,10 @@ function CodeEditor()
     {
         setLanguage(() => event.target.value);
     }
-
+    function updateCode(value)
+    {
+        props.editorRef.current = value;
+    }
     
     return (
         <div id="code_editor">
@@ -23,9 +26,9 @@ function CodeEditor()
             language={language}
             theme = "dark"
             defaultValue='#Write your code here'
-            width="60vw"
-            height="100vh"
+            height="500px"
             id = "editor"
+            onChange={updateCode}
             />
         </div>
     )

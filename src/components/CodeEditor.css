@@ -16,13 +16,49 @@
 #right_panel_container{
     flex:2;
     border: 1px solid black;
-    min-height:600px;
     padding: 20px;
 }
 
 #PD_container{
     flex:1;
     border: 1px solid black;
-    width:40%;
     padding: 20px;
+    height: 100%;
+    overflow: scroll;
+}
+#left_wrapper{
+    flex:1;
+    display:flex;
+}
+#size_adjust_btn{
+    width:10px;
+    margin:0;
+    padding:0px;
+    font-weight: bolder;
+}
+#size_adjust_btn:hover{
+    cursor:col-resize;
+}
+
+#code_editor_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#kill_button{
+    margin-right: 20%;
+    width: 100px;
+    height: 40px;
+    margin-top:10px;
+    background-color: rgb(8, 145, 8);
+    border: none;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: 0.25s;
+}
+
+#kill_button:hover{
+    cursor: pointer;
+    background-color: rgba(8, 145, 8, 0.628);
 }
