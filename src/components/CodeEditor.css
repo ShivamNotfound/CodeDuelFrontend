@@ -14,9 +14,10 @@
 }
 
 #right_panel_container{
-    flex:2;
+    /* flex:2; */
     border: 1px solid black;
     padding: 20px;
+    min-width:0px;
 }
 
 #PD_container{
@@ -27,7 +28,7 @@
     overflow: scroll;
 }
 #left_wrapper{
-    flex:1;
+    /* flex:1; */
     display:flex;
 }
 #size_adjust_btn{

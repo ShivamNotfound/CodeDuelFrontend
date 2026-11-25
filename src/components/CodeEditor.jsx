@@ -27,8 +27,12 @@ function CodeEditor(props)
             theme = "dark"
             defaultValue='#Write your code here'
             height="500px"
+            width="100%"
             id = "editor"
             onChange={updateCode}
+            option ={{
+                automaticLayout: true,
+            }}
             />
         </div>
     )

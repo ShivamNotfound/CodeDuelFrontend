@@ -10,7 +10,7 @@ function RightPanel(props)
     const editorRef = useRef("");
 
     return (
-        <div id="right_panel_container" ref = {props.right_panelRef}>
+        <div id="right_panel_container" style={{ flex: `0 0 ${100 - props.left_width}%` }}>
             <div id="code_editor_header">
                 <h2>
                 Code Editor
