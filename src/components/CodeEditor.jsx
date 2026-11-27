@@ -26,7 +26,7 @@ function CodeEditor(props)
             language={language}
             theme = "dark"
             defaultValue='#Write your code here'
-            height="500px"
+            height={props.height}
             width="100%"
             id = "editor"
             onChange={updateCode}
@@ -34,7 +34,23 @@ function CodeEditor(props)
                 automaticLayout: true,
             }}
             />
+            
+        <button id="height_adjust_btn"
+                // onPointerDown={(e)=>e.currentTarget.setPointerCapture(e.pointerId)}
+                // onPointerMove={(e)=>{
+                //     if(e.buttons === 1)
+                //     {
+
+                //     }
+                // }}
+                >
+            ..
+        </button>
+        <div id="if_code_failed" ref = {props.resultRef} style={{display: "none", height: 500 - props.height}}>
         </div>
+        
+        </div>
+        
     )
 }
 
